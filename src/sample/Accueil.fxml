@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="378.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Accueil">
+   <children>
+      <ImageView fitHeight="378.0" fitWidth="362.0">
+         <image>
+            <Image url="@28.07.2021_12.30.29_REC.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="520.0" layoutY="20.0" onMouseClicked="#Fermer" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#0794f2" layoutX="404.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#0794f2" layoutX="438.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#0794f2" layoutX="392.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Averda App " textAlignment="CENTER" wrappingWidth="126.13665771484375">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="394.0" layoutY="286.0" mnemonicParsing="false" onAction="#SignIn" prefHeight="43.0" prefWidth="103.0" text="Sign in" textFill="#0794f2">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

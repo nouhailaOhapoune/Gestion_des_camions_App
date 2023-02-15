@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUp">
+   <children>
+      <AnchorPane fx:id="anchorpane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0">
+               <image>
+                  <Image url="@signup.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="268.0" layoutY="314.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="32.0" prefWidth="101.0" text="Sign up" />
+            <Label fx:id="label" layoutX="260.0" layoutY="273.0" prefHeight="32.0" prefWidth="183.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="Password" layoutX="198.0" layoutY="226.0" prefHeight="39.0" prefWidth="242.0" promptText="Password" />
+            <TextField fx:id="Username" layoutX="198.0" layoutY="173.0" prefHeight="39.0" prefWidth="242.0" promptText="Username" />
+            <TextField fx:id="Age" layoutX="198.0" layoutY="123.0" prefHeight="39.0" prefWidth="242.0" promptText="Age" />
+            <TextField fx:id="Surname" layoutX="198.0" layoutY="74.0" prefHeight="39.0" prefWidth="242.0" promptText="Surname" />
+            <TextField fx:id="Name" layoutX="198.0" layoutY="20.0" prefHeight="39.0" prefWidth="242.0" promptText="Name" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="recherche" layoutX="61.0" layoutY="342.0" mnemonicParsing="false" onAction="#Recherche" prefHeight="32.0" prefWidth="92.0" text="recherche" />
+      <Button layoutX="61.0" layoutY="308.0" mnemonicParsing="false" onAction="#previous" text="&lt;" />
+      <Button layoutX="128.0" layoutY="308.0" mnemonicParsing="false" onAction="#next" text="&gt;" />
+      <Button layoutX="498.0" layoutY="346.0" mnemonicParsing="false" onAction="#update" text="update" />
+      <Button layoutX="501.0" layoutY="308.0" mnemonicParsing="false" onAction="#delete" text="delete" />
+      <Label layoutX="208.0" layoutY="363.0" prefHeight="17.0" prefWidth="142.0" text="Already have an account?" textFill="#f40000" />
+      <Label layoutX="359.0" layoutY="362.0" onMouseClicked="#SignIn" prefHeight="17.0" prefWidth="69.0" text="Login" textFill="#f20707">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="569.0" layoutY="-2.0" mnemonicParsing="false" onAction="#Fermer" prefHeight="32.0" prefWidth="31.0" text="X" />
+   </children>
+</Pane>
